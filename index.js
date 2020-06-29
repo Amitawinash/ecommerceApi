@@ -1,4 +1,4 @@
-const findLowCase = (password) => {
+const findLowerCase = (password) => {
   return /[a-z]/.test(password);
 }
 
@@ -20,7 +20,7 @@ let errorCount = 0 ;
 if (!password.match(/\d+/g) && !password.match(/\d+/g).length) {
   errorCount += 1; 
 }
-if(!findLowCase(password)){
+if(!findLowerCase(password)){
   errorCount += 1; 
 }
 if(!findUpperCase(password)){
